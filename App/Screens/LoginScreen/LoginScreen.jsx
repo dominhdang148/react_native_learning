@@ -7,7 +7,7 @@ import { useWarmUpBrowser } from "../../Hooks/warmUpBrowser";
 
 WebBrowser.maybeCompleteAuthSession();
 
-export default function Login() {
+export default function LoginScreen() {
   useWarmUpBrowser();
   const { startOAuthFlow } = useOAuth({ strategy: "oauth_google" });
   const onPress = React.useCallback(async () => {

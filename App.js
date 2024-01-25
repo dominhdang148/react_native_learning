@@ -1,8 +1,10 @@
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
+import { NavigationContainer } from '@react-navigation/native';
 import * as SecureStore from "expo-secure-store";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Login from './App/Screens/LoginScreen/Login';
+import { StyleSheet, View } from 'react-native';
+import TabNavigation from './App/Navigations/TabNavigation';
+import LoginScreen from './App/Screens/LoginScreen/LoginScreen';
 
 const tokenCache = {
   async getToken(key) {
@@ -29,11 +31,13 @@ export default function App() {
       <View style={styles.container}>
         {/* Sign in Component */}
         <SignedIn>
-          <Text>You are Signed in</Text>
+          <NavigationContainer>
+            <TabNavigation />
+          </NavigationContainer>
         </SignedIn>
         {/* Sign out */}
         <SignedOut>
-          <Login />
+          <LoginScreen />
         </SignedOut>
         <StatusBar style='auto' />
       </View>
