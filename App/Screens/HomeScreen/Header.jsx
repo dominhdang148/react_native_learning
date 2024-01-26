@@ -16,10 +16,14 @@ export default function Header() {
                         style={styles.userImage}
                     />
                     <View>
-                        <Text style={{ color: Colors.WHITE }}>Welcome,</Text>
                         <Text style={{
                             color: Colors.WHITE,
-                            fontSize: 20
+                            fontFamily: 'outfit'
+                        }}>Welcome,</Text>
+                        <Text style={{
+                            color: Colors.WHITE,
+                            fontSize: 20,
+                            fontFamily: 'outfit-medium',
                         }}>{user?.fullName}</Text>
                     </View>
                 </View>
@@ -77,7 +81,8 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.WHITE,
         borderRadius: 8,
         width: '85%',
-        fontSize: 16
+        fontSize: 16,
+        fontFamily: 'outfit',
     },
     searchBarContainer: {
         marginTop: 15,
