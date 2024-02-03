@@ -10,13 +10,13 @@ export default function Slider() {
     const getSliders = () => {
         GlobalApi.getSliders().then((resp) => {
             console.log("resp: ", resp.sliders)
-            setSlider(resp?.sliders)
+            setSlider(resp?.sliders) 
         })
     }
 
     return (
         <View>
-            <Text>Slider</Text>
+            <Text>Offer For You</Text>
         </View>
     )
 }
