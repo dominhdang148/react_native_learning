@@ -11,7 +11,6 @@ export default function Categories() {
     }, [])
     const getCategories = () => {
         GlobalApi.getCategories().then((reps) => {
-            console.log(reps.categories);
             setCategories(reps?.categories);
         });
     }

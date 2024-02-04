@@ -10,7 +10,6 @@ export default function Slider() {
     }, []);
     const getSliders = () => {
         GlobalApi.getSliders().then((resp) => {
-            console.log("resp: ", resp.sliders);
             setSliders(resp?.sliders);
         });
     };
