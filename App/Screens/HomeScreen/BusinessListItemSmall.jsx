@@ -9,7 +9,7 @@ export default function BusinessListItemSmall({ business }) {
             <Image source={{ uri: business?.images[0]?.url }}
                 style={styles.image}
             />
-            <View>
+            <View style={styles.infoContainer}>
                 <Text
                     style={{
                         fontSize: 17,
@@ -21,6 +21,7 @@ export default function BusinessListItemSmall({ business }) {
                 <Text
                     style={{
                         fontSize: 13,
+                        color: Colors.GRAY,
                         fontFamily: 'outfit'
                     }}
                 >
@@ -34,13 +35,14 @@ export default function BusinessListItemSmall({ business }) {
                         color: Colors.PRIMARY,
                         backgroundColor: Colors.PRIMARY_LIGHT,
                         borderRadius: 3,
-                        alignItems: 'flex-start'
+                        alignSelf: 'flex-start',
+                        paddingHorizontal: 7
                     }}
                 >
                     {business?.category?.name}
                 </Text>
             </View>
-        </View>
+        </View >
     )
 }
 
@@ -50,9 +52,14 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.WHITE,
         borderRadius: 10
     },
+    infoContainer: {
+        padding: 7,
+        display: 'flex',
+        gap: 3,
+    },
     image: {
         width: 160,
         height: 100,
         borderRadius: 10
-    }
+    },
 })
