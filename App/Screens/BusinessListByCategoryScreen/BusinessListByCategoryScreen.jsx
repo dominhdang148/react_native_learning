@@ -45,7 +45,5 @@ export default function BusinessListByCategoryScreen() {
                 >No Business Found</Text>
             }
         </View >
-
-
     )
 }
