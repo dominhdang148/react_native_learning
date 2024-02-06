@@ -14,7 +14,6 @@ export default function BusinessLists() {
 
     const getBusinessLists = () => {
         GlobalApi.getBusinessLists().then((resp) => {
-            console.log(resp.businessLists);
             setBusinessLists(resp?.businessLists)
         })
     }
