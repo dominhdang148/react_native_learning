@@ -4,7 +4,6 @@ import React from "react";
 import { Text } from "react-native";
 import Colors from '../../Utils/Colors';
 import BookingScreen from "../Screens/BookingScreen/BookingScreen";
-import HomeScreen from "../Screens/HomeScreen/HomeScreen";
 import ProfileScreen from "../Screens/ProfileScreen/ProfileScreen";
 import HomeNavigation from './HomeNavigation';
 

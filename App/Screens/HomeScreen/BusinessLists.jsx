@@ -2,7 +2,7 @@ import { View, Text, FlatList } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import GlobalApi from '../../../Utils/GlobalApi';
 import Heading from '../../Components/Heading';
-import BusinessListItemSmall from './BusinessListItemSmall';
+import BusinessListsItemSmall from './BusinessListsItemSmall';
 
 export default function BusinessLists() {
 
@@ -28,7 +28,7 @@ export default function BusinessLists() {
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item, index }) => (
                     <View style={{ marginRight: 10 }}>
-                        <BusinessListItemSmall business={item} />
+                        <BusinessListsItemSmall business={item} />
                     </View>
                 )}
             />

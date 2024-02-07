@@ -1,9 +1,8 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
-import HomeScreen from '../Screens/HomeScreen/HomeScreen';
-import BusinessListByCategoryScreen from '../Screens/BusinessListByCategoryScreen/BusinessListByCategoryScreen';
+import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
 import BusinessDetailScreen from '../Screens/BusinessDetailScreen/BusinessDetailScreen';
+import BusinessListByCategoryScreen from '../Screens/BusinessListByCategoryScreen/BusinessListByCategoryScreen';
+import HomeScreen from '../Screens/HomeScreen/HomeScreen';
 
 const Stack = createStackNavigator();
 
@@ -18,3 +17,6 @@ export default function HomeNavigation() {
         </Stack.Navigator>
     )
 }
+
+
+
